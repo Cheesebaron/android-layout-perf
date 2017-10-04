@@ -16,6 +16,9 @@ namespace Demo
 
             var verboseButton = FindViewById<Button>(Resource.Id.button_verbose);
             verboseButton.Click += (sender, args) => StartActivity(typeof(VerboseActivity));
+
+            var overdrawButton = FindViewById<Button>(Resource.Id.button_overdraw);
+            overdrawButton.Click += (sender, args) => StartActivity(typeof(OverdrawActivity));
         }
     }
 }

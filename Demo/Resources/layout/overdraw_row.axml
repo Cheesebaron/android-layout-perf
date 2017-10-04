@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@android:color/white">
+  <FFImageLoading.Views.ImageViewAsync
+    android:id="@+id/monkeyMug"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:scaleType="centerInside"
+    android:layout_alignParentStart="true"
+    android:layout_centerVertical="true" />
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_toEndOf="@+id/monkeyMug"
+    android:layout_toStartOf="@+id/score"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+    <TextView
+      android:id="@+id/monkeyName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@android:color/white"
+      android:textColor="@android:color/black"
+      android:text="My Name is Monkey"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+  </LinearLayout>
+  <TextView
+    android:id="@+id/score"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_centerVertical="true"
+    android:background="@android:color/white"
+    android:padding="5dp"
+    android:textColor="@android:color/black"
+    android:text="Score 9001"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+</RelativeLayout>

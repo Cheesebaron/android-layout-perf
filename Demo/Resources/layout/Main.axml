@@ -3,9 +3,14 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-  <Button
-    android:id="@+id/button_verbose"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Verbose" />
+    <Button
+        android:id="@+id/button_verbose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verbose" />
+    <Button
+      android:id="@+id/button_overdraw"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Overdraw" />
 </LinearLayout>
