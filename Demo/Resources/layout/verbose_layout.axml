@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dk.ostebaronen.VerboseRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    local:verbose_indent="0">
+    <dk.ostebaronen.VerboseRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="60dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        android:background="@android:color/holo_orange_light"
+        local:verbose_indent="1">
+        <dk.ostebaronen.VerboseRelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/holo_blue_light"
+            local:verbose_indent="2" />
+    </dk.ostebaronen.VerboseRelativeLayout>
+</dk.ostebaronen.VerboseRelativeLayout>
