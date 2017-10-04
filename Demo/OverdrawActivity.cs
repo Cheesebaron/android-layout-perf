@@ -4,6 +4,7 @@ using System.Linq;
 using Android.App;
 using Android.Content;
 using Android.OS;
+using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
 using FFImageLoading;
@@ -12,14 +13,18 @@ using Object = Java.Lang.Object;
 
 namespace Demo
 {
-    [Activity(Label = "Overdraw")]
-    public class OverdrawActivity : ListActivity
+    [Activity(Label = "Overdraw", Theme = "@style/AppTheme")]
+    public class OverdrawActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            ListAdapter = new MonkeyAdapter(this, Resource.Layout.overdraw_row, new []
+            SetContentView(Resource.Layout.overdraw_layout);
+
+            var listView = FindViewById<ListView>(Resource.Id.listView);
+
+            listView.Adapter = new MonkeyAdapter(this, Resource.Layout.overdraw_row, new []
             {
                 "http://1.bp.blogspot.com/-TvEz8A8XbH8/UardB3Zk0jI/AAAAAAAAE38/SkaiRImk-YU/s1600/Monkey.jpeg",
                 "http://3.bp.blogspot.com/-E1imnssipoQ/TdPFoWc6X1I/AAAAAAAAGUk/a1mO87RuJkQ/s1600/baby-monkey-wallpaper.jpg",

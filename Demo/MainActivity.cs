@@ -2,11 +2,12 @@
 using Android.App;
 using Android.Widget;
 using Android.OS;
+using Android.Support.V7.App;
 
 namespace Demo
 {
-    [Activity(Label = "Demo", MainLauncher = true)]
-    public class MainActivity : Activity
+    [Activity(Label = "Demo", MainLauncher = true, Theme = "@style/AppTheme")]
+    public class MainActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
