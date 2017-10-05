@@ -20,6 +20,12 @@ namespace Demo
 
             var overdrawButton = FindViewById<Button>(Resource.Id.button_overdraw);
             overdrawButton.Click += (sender, args) => StartActivity(typeof(OverdrawActivity));
+
+            var nestedButton = FindViewById<Button>(Resource.Id.button_nested);
+            nestedButton.Click += (sender, args) => StartActivity(typeof(NestedActivity));
+
+            var constraintsButton = FindViewById<Button>(Resource.Id.button_constraints);
+            constraintsButton.Click += (sender, args) => StartActivity(typeof(ConstraintsActivity));
         }
     }
 }
