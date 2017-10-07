@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<signaturecapture.library.SignatureCaptureView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sig="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/capture_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    sig:stroke_width="12"
+    sig:paint_color="#00cc99"
+    sig:background_color="#000000" />

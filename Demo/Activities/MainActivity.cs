@@ -1,5 +1,4 @@
-﻿using System;
-using Android.App;
+﻿using Android.App;
 using Android.Widget;
 using Android.OS;
 using Android.Support.V7.App;
@@ -26,6 +25,13 @@ namespace Demo
 
             var constraintsButton = FindViewById<Button>(Resource.Id.button_constraints);
             constraintsButton.Click += (sender, args) => StartActivity(typeof(ConstraintsActivity));
+
+            var customDrawButton = FindViewById<Button>(Resource.Id.button_draw);
+            customDrawButton.Click += (sender, args) => StartActivity(typeof(DrawActivity));
+
+
+            //StrictMode.SetThreadPolicy(new StrictMode.ThreadPolicy.Builder().DetectAll().PenaltyLog().Build());
+            //StrictMode.SetVmPolicy(new StrictMode.VmPolicy.Builder().DetectLeakedSqlLiteObjects().DetectLeakedClosableObjects().PenaltyLog().PenaltyDeath().Build());
         }
     }
 }

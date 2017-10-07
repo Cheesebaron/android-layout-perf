@@ -24,7 +24,7 @@ namespace Demo
 
             var listView = FindViewById<ListView>(Resource.Id.listView);
 
-            listView.Adapter = new MonkeyAdapter(this, Resource.Layout.overdraw_row, new []
+            listView.Adapter = new MonkeyAdapter(this, Resource.Layout.less_overdraw_row, new []
             {
                 "http://1.bp.blogspot.com/-TvEz8A8XbH8/UardB3Zk0jI/AAAAAAAAE38/SkaiRImk-YU/s1600/Monkey.jpeg",
                 "http://3.bp.blogspot.com/-E1imnssipoQ/TdPFoWc6X1I/AAAAAAAAGUk/a1mO87RuJkQ/s1600/baby-monkey-wallpaper.jpg",
@@ -32,7 +32,22 @@ namespace Demo
                 "http://4.bp.blogspot.com/-CJRq4MLNuSI/TZBo7bYaD5I/AAAAAAAAABE/Nitaxf35rQA/s1600/crazy+monkey+post+3.jpg",
                 "http://news.nationalgeographic.com/content/dam/news/2016/10/08/drill-monkey-waq/drill-monkey-01.ngsversion.1475926206479.adapt.1900.1.jpg",
                 "http://www.lanzaroteinformation.com/files/Monkey_2.jpg",
-                "https://www.primates.com/monkeys/images/dourcoul.jpg",
+                "http://1.bp.blogspot.com/-lICDldGhyno/UEzllh4G-2I/AAAAAAAABxQ/t3DucL0rQuM/s1600/pretty-monkey1.jpg",
+                "http://www.lolhome.com/img_big/monkey-business.jpg",
+                "http://1.bp.blogspot.com/-TvEz8A8XbH8/UardB3Zk0jI/AAAAAAAAE38/SkaiRImk-YU/s1600/Monkey.jpeg",
+                "http://3.bp.blogspot.com/-E1imnssipoQ/TdPFoWc6X1I/AAAAAAAAGUk/a1mO87RuJkQ/s1600/baby-monkey-wallpaper.jpg",
+                "https://erinmeyers.files.wordpress.com/2011/06/babymonkey.jpg",
+                "http://4.bp.blogspot.com/-CJRq4MLNuSI/TZBo7bYaD5I/AAAAAAAAABE/Nitaxf35rQA/s1600/crazy+monkey+post+3.jpg",
+                "http://news.nationalgeographic.com/content/dam/news/2016/10/08/drill-monkey-waq/drill-monkey-01.ngsversion.1475926206479.adapt.1900.1.jpg",
+                "http://www.lanzaroteinformation.com/files/Monkey_2.jpg",
+                "http://1.bp.blogspot.com/-lICDldGhyno/UEzllh4G-2I/AAAAAAAABxQ/t3DucL0rQuM/s1600/pretty-monkey1.jpg",
+                "http://www.lolhome.com/img_big/monkey-business.jpg",
+                "http://1.bp.blogspot.com/-TvEz8A8XbH8/UardB3Zk0jI/AAAAAAAAE38/SkaiRImk-YU/s1600/Monkey.jpeg",
+                "http://3.bp.blogspot.com/-E1imnssipoQ/TdPFoWc6X1I/AAAAAAAAGUk/a1mO87RuJkQ/s1600/baby-monkey-wallpaper.jpg",
+                "https://erinmeyers.files.wordpress.com/2011/06/babymonkey.jpg",
+                "http://4.bp.blogspot.com/-CJRq4MLNuSI/TZBo7bYaD5I/AAAAAAAAABE/Nitaxf35rQA/s1600/crazy+monkey+post+3.jpg",
+                "http://news.nationalgeographic.com/content/dam/news/2016/10/08/drill-monkey-waq/drill-monkey-01.ngsversion.1475926206479.adapt.1900.1.jpg",
+                "http://www.lanzaroteinformation.com/files/Monkey_2.jpg",
                 "http://1.bp.blogspot.com/-lICDldGhyno/UEzllh4G-2I/AAAAAAAABxQ/t3DucL0rQuM/s1600/pretty-monkey1.jpg",
                 "http://www.lolhome.com/img_big/monkey-business.jpg"
             }.OrderBy(s => Guid.NewGuid()));

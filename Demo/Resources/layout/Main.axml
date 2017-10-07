@@ -13,14 +13,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Overdraw" />
-  <Button
-    android:id="@+id/button_nested"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Nested" />
-  <Button
-    android:id="@+id/button_constraints"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Constraints" />
+    <Button
+        android:id="@+id/button_nested"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nested" />
+    <Button
+        android:id="@+id/button_constraints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Constraints" />
+    <Button
+        android:id="@+id/button_draw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Draw" />
 </LinearLayout>
