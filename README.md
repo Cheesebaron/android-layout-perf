@@ -12,3 +12,8 @@ In short terms:
   - ConstraintLayout is the new kid on the block
 - Reuse paints, paths etc in `OnDraw`
 - Be quick in `OnDraw`; less than 16 ms
+
+# License
+
+Unless stated in the header of the file, the files in this repository are licensed under the MIT License.
+See [LICENSE](https://github.com/Cheesebaron/android-layout-perf/blob/master/LICENSE) 
