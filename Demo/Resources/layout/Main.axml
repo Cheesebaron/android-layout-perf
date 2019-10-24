@@ -9,6 +9,16 @@
         android:layout_height="wrap_content"
         android:text="Verbose" />
     <Button
+        android:id="@+id/button_verbose_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verbose LL" />
+    <Button
+        android:id="@+id/button_verbose_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verbose Constraint" />
+    <Button
         android:id="@+id/button_overdraw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

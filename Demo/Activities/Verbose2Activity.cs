@@ -1,12 +1,12 @@
-using Android.App;
+﻿using Android.App;
 using Android.OS;
 using Android.Support.V7.App;
 using Android.Views;
 
 namespace Demo
 {
-    [Activity(Label = "Verbose", Theme = "@style/AppTheme")]
-    public class VerboseActivity : AppCompatActivity
+    [Activity(Label = "Verbose LL", Theme = "@style/AppTheme")]
+    public class Verbose2Activity : AppCompatActivity
     {
         private Handler _frameMetricsHandler;
 
@@ -14,7 +14,7 @@ namespace Demo
         {
             base.OnCreate(savedInstanceState);
 
-            SetContentView(Resource.Layout.nested_verbose_layout);
+            SetContentView(Resource.Layout.linear_verbose_layout);
 
             _frameMetricsHandler = new Handler();
 

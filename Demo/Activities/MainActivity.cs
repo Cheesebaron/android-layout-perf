@@ -17,6 +17,12 @@ namespace Demo
             var verboseButton = FindViewById<Button>(Resource.Id.button_verbose);
             verboseButton.Click += (sender, args) => StartActivity(typeof(VerboseActivity));
 
+            var linearVerboseButton = FindViewById<Button>(Resource.Id.button_verbose_linear);
+            linearVerboseButton.Click += (sender, args) => StartActivity(typeof(Verbose2Activity));
+
+            var constraintVerboseButton = FindViewById<Button>(Resource.Id.button_verbose_constraint);
+            constraintVerboseButton.Click += (sender, args) => StartActivity(typeof(Verbose3Activity));
+
             var overdrawButton = FindViewById<Button>(Resource.Id.button_overdraw);
             overdrawButton.Click += (sender, args) => StartActivity(typeof(OverdrawActivity));
 

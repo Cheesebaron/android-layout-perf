@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dk.ostebaronen.VerboseLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <dk.ostebaronen.VerboseLinearLayout
+        android:id="@+id/third"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:background="@android:color/holo_purple" />
+
+    <dk.ostebaronen.VerboseLinearLayout
+        android:id="@+id/other_third"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:background="@android:color/holo_green_light" />
+
+    <dk.ostebaronen.VerboseLinearLayout
+        android:id="@+id/other_other_third"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:background="@android:color/white">
+
+        <dk.ostebaronen.VerboseLinearLayout
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:background="@android:color/holo_blue_bright" />
+
+        <dk.ostebaronen.VerboseLinearLayout
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:background="@android:color/holo_red_light" />
+
+    </dk.ostebaronen.VerboseLinearLayout>
+
+</dk.ostebaronen.VerboseLinearLayout>

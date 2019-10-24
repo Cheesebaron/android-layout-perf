@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dk.ostebaronen.VerboseConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/third_guidline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.333" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/two_thirds_guidline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.666" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/half_guidline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <dk.ostebaronen.VerboseLinearLayout
+        android:id="@+id/third"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/holo_purple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/third_guidline" />
+
+    <dk.ostebaronen.VerboseLinearLayout
+        android:id="@+id/other_third"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/holo_green_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/third_guidline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/two_thirds_guidline" />
+
+    <dk.ostebaronen.VerboseLinearLayout
+        android:layout_margin="10dp"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:background="@android:color/holo_blue_bright"
+        app:layout_constraintTop_toBottomOf="@id/two_thirds_guidline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/half_guidline" />
+
+    <dk.ostebaronen.VerboseLinearLayout
+        android:layout_margin="10dp"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:background="@android:color/holo_red_light"
+        app:layout_constraintTop_toBottomOf="@id/two_thirds_guidline"
+        app:layout_constraintStart_toEndOf="@id/half_guidline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</dk.ostebaronen.VerboseConstraintLayout>
